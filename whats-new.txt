@@ -1,0 +1,47 @@
+SRI CRACKERS BILLING - WHAT IS NEW (version 1.7)
+================================================
+- GST and HSN: Items tab has GST % and HSN code (also CSV column "HSN Code"). Shop details > GST and HSN: turn on GST billing, choose whether prices include GST or GST is added on top, and whether GST and HSN are shown on invoices and on estimates. Set GST % / HSN for many items at once. On every bill you can change prices include/exclude GST, show or hide GST, same-state (CGST+SGST) or other-state (IGST), and type the customer's GSTIN. Invoices with GST shown print as TAX INVOICE.
+- Returns tab: return or exchange against a saved invoice (or without one). Choose quantities, put items back in stock, add exchange items, then collect the difference or refund by cash, UPI, card, store credit or against Ledger dues. Prints a Credit note / Exchange note (PDF, print, share). Day close and sales reports show returns.
+- Counter tab: rename or remove a counter (a counter with an open shift, or the last one, cannot be removed; old bills keep its name).
+- Connect more computers and phones: Shop details > Connect more computers and phones. See SYNC-GUIDE.txt.
+
+SRI CRACKERS BILLING - WHAT IS NEW (version 1.6)
+================================================
+
+- Company logo: Shop details > Company logo. Choose a picture and it prints at the top left of every invoice, estimate, report and thermal receipt. Pick the size (small, medium, large) or switch it off.
+- Saved bills tab: every invoice and estimate now has Share PDF, Download PDF and Print buttons. You do not need to open the bill first.
+- Khata is now called Ledger everywhere.
+- Items tab: Share, Print, PDF or CSV of the whole price list (or only the items you filtered).
+- Barcodes for all items: Items tab > Barcodes for your items gives every item a barcode number and prints labels for all items.
+- Stock tab > Barcode labels: tick the items you want (or Select all), set the copies for each item, and print, download or share. Print only the selected items, or every item with the same number of copies. Also a printable barcode number list.
+- Stock tab > Add new items from a CSV file: load a CSV of new items. Choose to add new items only, or add new and update existing. New items can get barcodes and go straight into the label selection. Opening stock is recorded. Undo is available.
+- Fixed: the extra CSV columns (SKU, Brand, Stock, Cost and so on) are now read correctly on the Items tab too. An empty cell leaves the old value as it was.
+
+EARLIER (version 1.5)
+--------------------
+Everything works offline. All data stays on the device. Use Shop details > Download backup to move it.
+
+BILLING
+- Barcode scanner: scan an item and it is added at once. Type 3*24 + Enter to add 3 of item 24.
+- Keys: F2 search, F3 customer, F4 payment, F8 save, F9 receipt print, F10 new bill.
+- Checkout panel: customer, retail/wholesale price, coupon code, offers applied, split payment (cash + UPI + card + store credit + loyalty points), the rest goes to Ledger (credit).
+- Thermal receipt: 2 inch or 3 inch, with logo and return policy (Shop details).
+- Saved invoice: "Copy to new invoice" (Saved bills tab) or "Save as new invoice" (while editing) keeps the original unchanged.
+
+ITEMS (Items tab > Inventory, variants and pricing)
+- SKU, barcode, brand, size, colour, batch, expiry, MRP, cost, wholesale price, minimum price, GST %, stock, safety level, reorder quantity, supplier.
+- The CSV file has matching columns. Download the current list to see them.
+
+CUSTOMERS, LEDGER
+- Customers tab: profile, purchase history, store credit/advance, loyalty points, statement (print / PDF / share).
+- Ledger tab: dues, receive payment, WhatsApp / SMS reminder (the message opens ready, press send; needs internet).
+
+STOCK, SUPPLIERS, OFFERS
+- Stock tab: counts down when an invoice is saved, low stock alerts, reorder list (print / PDF / share / CSV), expiry, barcode labels.
+- Suppliers tab: suppliers, purchase orders (receive adds stock), purchase returns, dues.
+- Offers tab: Buy-get-free, percentage, flat, coupon codes, festival dates, discount by customer group.
+
+COUNTER, REPORTS
+- Counter tab: open a shift with opening cash, cash in/out, close with counted cash/UPI/card and see differences.
+- Day close tab: end-of-day report; Sales report for week, month, quarter, year or chosen dates. Print / PDF / share / CSV.
+- Analytics tab: new Behaviour view (best day, busiest hour, repeat customers, bought together). Any view can be printed or shared as PDF.

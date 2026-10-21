@@ -1,0 +1,16 @@
+{
+  "name": "Sri Crackers Billing",
+  "short_name": "SC Billing",
+  "description": "Billing app for Sri Crackers with the 2026 price list, discounts and PDF bills.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f3f3f7",
+  "theme_color": "#cf1577",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

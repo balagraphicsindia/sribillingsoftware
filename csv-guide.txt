@@ -1,0 +1,60 @@
+HOW TO CHANGE THE ITEM LIST WITH A CSV FILE
+==========================================
+
+Works the same on Windows, Android phones and tablets. No internet is needed.
+In the app: Items tab > "Change the item list with a CSV file".
+
+
+A. GET THE CURRENT LIST AS A CSV FILE
+  1. Open the Items tab.
+  2. Press "Download current list (CSV)".
+     The file sri-crackers-items.csv is saved in your Downloads folder.
+     (Or press "Download empty template" to start with only the column names.)
+
+B. EDIT IT
+  3. Open the file in Excel, Google Sheets or WPS Office.
+  4. Change prices, add one row for each new item, delete the rows of items you
+     no longer sell. Do NOT change or delete the first row (column names).
+     Columns:
+       Item No         number of the item (leave empty to get a new number)
+       Product Name    required
+       Tamil Name      optional
+       Category        optional (items with the same category are grouped)
+       Category Tamil  optional
+       Price           number, for example 245 or 245.50 (leave empty if not fixed)
+       Per             for example 1 Box, 1 Pkt, 1 Bag
+       No Discount     write Yes for items that must not get a discount
+  5. Save as CSV UTF-8.
+       Excel:   File > Save As > "CSV UTF-8 (Comma delimited) (*.csv)"
+       Sheets:  File > Download > Comma-separated values (.csv)
+     Do not save as .xlsx. Do not use plain "CSV" in Excel, or Tamil letters break.
+
+C. LOAD THE NEW FILE AND REMOVE THE OLD LIST
+  6. Back in the app, Items tab, press "Choose CSV file" and pick your file.
+  7. Read the preview: rows read, items ready, problems (skipped rows are listed
+     with their row numbers) and the first rows of the file.
+  8. Choose what happens to the old list:
+       Replace the whole list   removes ALL old items and keeps only the items in
+                                your new file. This is how you remove the old list.
+       Add and update           keeps all old items. Items with the same Item No are
+                                changed, new Item Nos are added. Nothing is removed.
+  9. Press the green button. For "Replace" press it a second time to confirm.
+ 10. The Items tab and the search on the Billing tab now use the new list.
+
+D. IF YOU MADE A MISTAKE
+  - Press "Undo last import" (Items tab) to get the previous list back.
+  - "Shop details > Backup > Reset price list to original" brings back the 2026
+    price list from the PDF.
+
+GOOD TO KNOW
+  - Bills you already made and saved never change. They keep the item names and
+    prices they were made with. Analytics also keep old bills as they were.
+  - Item No must be a whole number and must be different for each item.
+  - If you change an Item No for an existing product, use "Replace" so the old
+    number does not stay in the list.
+  - Prices written like 26-00 (as in the printed price list), Rs. 26 or 1,250.50
+    are understood.
+  - Files saved from Excel as "CSV (Comma delimited)", with semicolons, or as
+    UTF-16 Unicode text are also read, but CSV UTF-8 is the safest.
+
+NEW COLUMN: HSN Code (optional, last column). The GST % column already exists.

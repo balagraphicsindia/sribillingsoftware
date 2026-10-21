@@ -1,0 +1,89 @@
+SRI CRACKERS BILLING - HOW TO INSTALL
+=====================================
+
+This is an installable web app (PWA). Once it is online at a web address (a link),
+it installs like a normal app on Android phones, Android tablets, Windows PCs
+and iPads, and keeps working without internet.
+
+You do the "put it online" step ONE time. After that every device just opens the
+link and taps Install.
+
+
+STEP 1 - PUT THE APP ONLINE (one time, free)
+--------------------------------------------
+First unzip the downloaded file. You will get a folder called
+"sri-crackers-billing" (it contains index.html, manifest.webmanifest, sw.js
+and an icons folder). Keep these files together.
+
+Option A: Netlify (easiest)
+  1. On a computer, open https://app.netlify.com/drop
+  2. Drag the whole "sri-crackers-billing" folder onto the page.
+  3. Netlify gives you a link such as https://something.netlify.app
+  4. Create a free Netlify account and claim the site, so the link stays
+     active permanently.
+
+Option B: GitHub Pages
+  1. Create a free account at https://github.com and make a new public repository.
+  2. Upload all files from the folder (keep the icons folder) to the repository.
+  3. Open Settings > Pages, choose "Deploy from a branch", branch "main",
+     folder "/ (root)", and save.
+  4. After a minute the link is https://YOURNAME.github.io/REPOSITORY-NAME/
+
+Write the link down. Use the same link on every device.
+(The link must start with https:// for the Install option to appear.)
+
+
+STEP 2 - INSTALL ON EACH DEVICE
+-------------------------------
+ANDROID PHONE OR TABLET (Chrome)
+  1. Open the link in Chrome.
+  2. Tap "Install app" at the top of the page, or open the Chrome menu (three dots)
+     and choose "Install app" / "Add to Home screen".
+  3. Tap Install. The "SC Billing" icon appears on the home screen.
+  4. Open it from the icon. It opens full screen like any app.
+
+WINDOWS 10 / 11 (Microsoft Edge or Google Chrome)
+  1. Open the link in Edge or Chrome.
+  2. Click "Install app" at the top of the page, or the install icon at the right
+     end of the address bar (a small monitor with a down arrow).
+     In Edge you can also use Menu (...) > Apps > Install this site as an app.
+  3. Click Install. Choose to pin it to the Start menu, taskbar or desktop.
+
+IPAD (Safari)
+  1. Open the link in Safari.
+  2. Tap the Share button, then "Add to Home Screen", then Add.
+
+WINDOWS WITHOUT ANY ONLINE SETUP (works, but is not an installed app)
+  1. Unzip the folder.
+  2. Double-click index.html. It opens in your browser.
+  3. Bookmark it, or right-click index.html > Send to > Desktop (create shortcut).
+  Printing and PDF work. Data stays in that same browser on that PC.
+
+
+USING THE APP
+-------------
+- Billing tab: type a serial number or name in "Find item", pick the item, set the
+  quantity and press "Add to bill". Items are added only with that button.
+- Price can be changed on any line. Items 122 to 128 have no price in the
+  price list, so type the price on the bill.
+- Discount is typed at the bottom of the bill, as a percentage or a rupee amount.
+- Bill copy: Preview, Print, Download PDF, Share PDF (opens WhatsApp, email and
+  other apps on phones and tablets). If sharing is not supported on a device,
+  the PDF is downloaded instead.
+- Shop details tab: change the mobile numbers, address or other shop details.
+- Items tab: add, edit or delete items and prices for the future.
+- Saved bills tab: open or delete earlier bills.
+
+
+IMPORTANT NOTES
+---------------
+- Each device keeps its own items and saved bills. To move data to another
+  device: Shop details tab > Download backup, then on the other device
+  Shop details tab > Restore from file.
+- Do not clear the browser's "site data" for this app, or the saved bills on that
+  device will be erased. Download a backup regularly.
+- To update the app later, upload the new files to the same place (same link).
+  Devices pick up the update the next time they open the app with internet.
+- Android .apk file or Windows .exe: if you need one for a store or for
+  sharing a file instead of a link, upload the link at https://www.pwabuilder.com
+  and it can package the app for Android and Windows.

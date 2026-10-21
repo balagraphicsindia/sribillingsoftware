@@ -1,0 +1,33 @@
+CONNECT MORE COMPUTERS AND PHONES (version 1.7)
+===============================================
+One computer runs a small "sync server". Every device (Windows, Android phone or tablet, browser)
+keeps working on its own and shares items, bills, estimates, returns, customers, ledger, stock and
+settings through that server.
+
+A. WIFI / LAN (same shop network)
+ 1. Pick the shop computer that stays on. Install Node.js LTS from https://nodejs.org (once).
+ 2. Put sync-server.js (and Start-Sync-Server.bat on Windows) in the same folder as index.html.
+ 3. Windows: double-click Start-Sync-Server.bat, choose an access key. Other systems: run
+    SYNC_KEY=yourkey node sync-server.js
+ 4. The window prints addresses like http://192.168.1.10:8787 . Allow it in Windows Firewall if asked.
+ 5. On every device: Shop details > Connect more computers and phones. Turn on Sync, type that address and
+    the access key, give the device a name, press Save and sync now.
+    - A NEW device: leave "Use the shop data from the server".
+    - The device that already holds your data (first one): choose "Upload this device's data".
+    - Phones and tablets can also just open http://192.168.1.10:8787 in Chrome and sign in the same way.
+ 6. Give the shop computer a fixed IP (router setting) so the address does not change.
+
+B. CLOUD (devices in different places)
+ Run the same sync-server.js on an always-on host (a small VPS, Render, Railway and so on) with HTTPS,
+ set SYNC_KEY, and type its https:// address on each device. Or keep the server on the shop computer and
+ reach it with a private tunnel such as Tailscale or Cloudflare Tunnel. Always use a strong access key.
+ The data file sync-data.json next to the server is the shop's master copy: back it up.
+
+HOW IT BEHAVES
+ - Saving a bill syncs within a few seconds; devices also check every 6 seconds. Offline devices catch up later.
+ - Records are merged one by one (a bill saved on the phone and one saved on the PC both survive).
+   If the same record is edited on two devices at once, the later save wins.
+ - Stock is merged by movements, so two counters selling the same item both reduce the stock.
+ - If two devices hit the same invoice number at the same moment, the server renames the later one (SC-0005-1).
+ - Android: the app now has internet permission and allows http addresses on your own network.
+ - The draft bill on screen is never changed by sync.
